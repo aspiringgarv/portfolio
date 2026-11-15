@@ -2,6 +2,9 @@
 
 Spring Boot (Java 21) backend + React/Vite/TypeScript frontend. Neon terminal look, with every visitor shown as a live avatar cursor over WebSockets.
 
+## Make it yours
+Give Claude your resume and it builds this same site with your content. Install the skill from [`.claude/skills/portfolio-from-resume`](.claude/skills/portfolio-from-resume/README.md).
+
 ## Run (production-style, one process)
 ```bash
 cd frontend && npm install && npm run build   # writes into backend/src/main/resources/static
