@@ -25,6 +25,7 @@ class ApiTest {
     @Test void clientRoutesForwardToIndex() throws Exception {
         mvc.perform(get("/algorithms")).andExpect(forwardedUrl("/index.html"));
         mvc.perform(get("/cube")).andExpect(forwardedUrl("/index.html"));
+        mvc.perform(get("/watch")).andExpect(forwardedUrl("/index.html"));
     }
 
     @Test void profileIsServed() throws Exception {

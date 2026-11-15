@@ -1,15 +1,16 @@
 import { Link, NavLink } from 'react-router-dom';
 
 const SECTIONS = [['experience', 'experience'], ['projects', 'projects'], ['lab', 'lab']] as const;
-const PAGES = [['/algorithms', 'algorithms'], ['/cube', 'cube']] as const;
+const PAGES = [['/algorithms', 'algorithms']] as const;
 
-const linkCls = ({ isActive }: { isActive: boolean }) => `transition hover:text-lime ${isActive ? 'text-lime' : 'text-mist'}`;
+const linkCls = (to: string) => ({ isActive }: { isActive: boolean }) =>
+  `transition hover:text-lime ${isActive ? 'text-lime' : to === '/algorithms' ? 'flash-tab' : 'text-mist'}`;
 
 function Links() {
   return (
     <>
       {SECTIONS.map(([id, label]) => (<li key={id} className="shrink-0"><Link to={`/#${id}`} className="text-mist transition hover:text-lime">{label}</Link></li>))}
-      {PAGES.map(([to, label]) => (<li key={to} className="shrink-0"><NavLink to={to} className={linkCls}>{label}</NavLink></li>))}
+      {PAGES.map(([to, label]) => (<li key={to} className="shrink-0"><NavLink to={to} className={linkCls(to)}>{label}</NavLink></li>))}
       <li className="shrink-0"><Link to="/#contact" className="text-mist transition hover:text-lime">contact</Link></li>
     </>
   );

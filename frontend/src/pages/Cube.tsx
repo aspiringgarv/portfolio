@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { CubeView } from '../cube/CubeView';
 import { useCube } from '../cube/useCube';
 import { FACE_ORDER, isSolved, moveName, parseMoves, randomScramble, toFacelets, type FaceLetter, type Move } from '../cube/model';
@@ -55,13 +54,12 @@ export default function CubePage() {
   const play = () => { if (!solution) return; setPlayStart(applied); enqueue(solution, speed); };
 
   return (
-    <main className="mx-auto w-full max-w-5xl px-5 py-14">
+    <div className="pt-8">
       <p className="font-mono text-sm text-dim">algorithms</p>
-      <h1 className="mt-2 font-mono text-4xl text-white">rubik's cube solver</h1>
+      <h2 className="mt-2 font-mono text-2xl text-white">rubik's cube solver</h2>
       <p className="mt-4 max-w-2xl text-lg leading-relaxed text-mist">
         Scramble the cube or turn it yourself, then press solve. A Kociemba two-phase solver finds the moves and the cube
-        plays them back. Drag the cube to look around.{' '}
-        <Link to="/algorithms" className="text-lime underline decoration-lime/40 hover:decoration-lime">More algorithms →</Link>
+        plays them back. Drag the cube to look around.
       </p>
 
       <div className="mt-8 grid gap-6 lg:grid-cols-[1.2fr_1fr]">
@@ -145,6 +143,6 @@ export default function CubePage() {
           </p>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

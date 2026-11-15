@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { PathfindLab } from '../components/lab/PathfindLab';
 import { TrickCard } from '../components/Trick';
 import { Reveal } from '../components/Reveal';
@@ -14,10 +13,10 @@ const SEARCHES = [
 export default function Algorithms() {
   const { profile } = useProfile();
   return (
-    <main className="mx-auto w-full max-w-5xl px-5 py-14">
+    <div className="pt-8">
       <Reveal>
         <p className="font-mono text-sm text-dim">notes from contest practice</p>
-        <h1 className="mt-2 font-mono text-4xl text-white">algorithms and tricks</h1>
+        <h2 className="mt-2 font-mono text-2xl text-white">algorithms and tricks</h2>
         <p className="mt-4 max-w-2xl text-lg leading-relaxed text-mist">
           A page for learning, not showing off. Shortest-path search you can watch run, and the techniques I reach for most
           in contests and interviews, each with the idea, the cost, a Java snippet and a problem to try.
@@ -26,7 +25,6 @@ export default function Algorithms() {
             <a className="text-lime underline decoration-lime/40 hover:decoration-lime" href={profile.links.codeforces} target="_blank" rel="noopener noreferrer">Codeforces</a>.</>
           )}
         </p>
-        <p className="mt-3 font-mono text-sm"><Link to="/cube" className="text-lime underline decoration-lime/40 hover:decoration-lime">Also try the Rubik's cube solver →</Link></p>
       </Reveal>
 
       <section className="mt-16" aria-labelledby="paths">
@@ -53,6 +51,6 @@ export default function Algorithms() {
           {TRICKS.map((t, i) => (<Reveal key={t.title}><TrickCard t={t} index={i} /></Reveal>))}
         </div>
       </section>
-    </main>
+    </div>
   );
 }
