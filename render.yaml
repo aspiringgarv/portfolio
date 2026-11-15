@@ -1,0 +1,14 @@
+# Render Blueprint: New > Blueprint > pick this repo. Free plan, built from the Dockerfile.
+# Free instances sleep when idle and have no persistent disk, so guestbook and
+# contact messages reset on restart.
+services:
+  - type: web
+    name: portfolio
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/stats
+    envVars:
+      # WebSocket origins allowed to connect (live cursors). Covers any *.onrender.com address;
+      # add your custom domain here (comma separated) if you attach one.
+      - key: PORTFOLIO_ALLOWED_ORIGINS
+        value: https://*.onrender.com

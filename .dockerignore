@@ -1,0 +1,7 @@
+.git
+.claude
+**/node_modules
+**/target
+backend/data
+backend/src/main/resources/static
+*.log

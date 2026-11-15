@@ -1,0 +1,32 @@
+# Change `app` to a unique name, and keep PORTFOLIO_ALLOWED_ORIGINS in sync with it
+# (or with your custom domain). Without it the live-cursor WebSocket is rejected.
+app = "garv-portfolio"
+primary_region = "bom"
+
+[build]
+
+[env]
+  PORTFOLIO_ALLOWED_ORIGINS = "https://garv-portfolio.fly.dev"
+
+[[mounts]]
+  source = "portfolio_data"
+  destination = "/data"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 1
+
+  [[http_service.checks]]
+    method = "GET"
+    path = "/api/stats"
+    interval = "30s"
+    timeout = "5s"
+    grace_period = "40s"
+
+[[vm]]
+  memory = "512mb"
+  cpu_kind = "shared"
+  cpus = 1

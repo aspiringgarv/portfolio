@@ -40,7 +40,7 @@ export function PipelineLab() {
     <article className="card p-5">
       <h3 className="font-mono text-lg text-white">Retry with backoff and a dead-letter queue</h3>
       <p className="mt-1 max-w-3xl text-sm text-mist">
-        At LumberFi my ERP sync pipelines retry failed events with exponential backoff and send the ones that run out of
+        In my ERP integration work, sync pipelines retry failed events with exponential backoff and send the ones that run out of
         retries to a dead-letter queue. This simulates that: each attempt fails at the rate you pick, the wait before
         retry <em>k</em> is base × 2<sup>k</sup>, and the Java service returns what happened to every event.
       </p>

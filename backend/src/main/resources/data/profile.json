@@ -1,0 +1,261 @@
+{
+  "name": "Garv Arora",
+  "handle": "garv",
+  "title": "Software Development Engineer",
+  "roles": [
+    "Java and Spring Boot backend engineer",
+    "builds ERP data-sync pipelines on Kafka",
+    "designs retry, backoff and dead-letter flows",
+    "LeetCode 2115, Codeforces Specialist"
+  ],
+  "tagline": "I'm a backend engineer. I build Kafka-based data-sync pipelines between ERP systems in Java and Spring Boot, and I practice competitive programming.",
+  "about": "Backend engineer building ERP integrations on Java, Spring Boot and Kafka. B.Tech in Computer Science from IIIT Vadodara (CGPA 8.88). I like fault-tolerant systems, clean domain design, and solving hard problems fast: LeetCode max rating 2115, Codeforces Specialist.",
+  "email": "garvarora778@gmail.com",
+  "phone": "+91-8558932125",
+  "links": {
+    "github": "https://github.com/aspiringgarv",
+    "linkedin": "https://linkedin.com/in/garv-arora",
+    "leetcode": "https://leetcode.com/u/aspiringgarv",
+    "codeforces": "https://codeforces.com/profile/aspgarv112",
+    "atcoder": "https://atcoder.jp/users/aspgarv"
+  },
+  "stats": [
+    {
+      "value": "2115",
+      "label": "LeetCode max rating",
+      "note": "top 1.58% globally"
+    },
+    {
+      "value": "1411",
+      "label": "Codeforces max",
+      "note": "Specialist"
+    },
+    {
+      "value": "350",
+      "label": "ICPC prelims rank",
+      "note": "of 3000 teams"
+    },
+    {
+      "value": "8.88",
+      "label": "CGPA",
+      "note": "IIIT Vadodara"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Backend engineering: ERP integrations",
+      "roles": [
+        {
+          "title": "Software Development Engineer",
+          "period": "Aug 2026 - Present"
+        },
+        {
+          "title": "Software Development Engineer Intern",
+          "period": "Jan 2026 - Jul 2026"
+        }
+      ],
+      "points": [
+        "Built custom ERP data-sync features and onboarded 6 new ERP systems using Java and Spring Boot.",
+        "Developed 20+ secure push and pull data pipelines between ERP systems and internal services, including an event-driven real-time sync pipeline on Apache Kafka processing 10K+ records per day.",
+        "Made pipelines fault-tolerant with exponential backoff retries and a dead-letter queue, automatically recovering 95% of transient failures and keeping syncs running through downstream outages.",
+        "Improved data consistency across integrated systems from 80% to 94% with better tracking of critical payroll data."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "GoPay",
+      "subtitle": "Payment gateway platform",
+      "stack": [
+        "Java",
+        "Spring Boot",
+        "Spring Security",
+        "PostgreSQL",
+        "Redis",
+        "JPA"
+      ],
+      "points": [
+        "Payment gateway simulator supporting card, UPI and netbanking, with an asynchronous bank-callback settlement processor.",
+        "State-machine-driven payment lifecycle with a full audit trail, so invalid state changes can't happen.",
+        "Secure card vault: AES-GCM envelope encryption and card tokenization.",
+        "JWT with rotating refresh tokens and API-key auth, plus Redis caching and rate limiting."
+      ],
+      "links": [
+        {
+          "label": "Source",
+          "url": "https://github.com/aspiringgarv/gopay"
+        },
+        {
+          "label": "System map and LLD",
+          "url": "https://aspiringgarv.github.io/gopay/"
+        }
+      ]
+    },
+    {
+      "title": "FedEx Logistics Streaming Pipeline",
+      "subtitle": "Real-time data streaming",
+      "stack": [
+        "Apache Kafka",
+        "Avro",
+        "Schema Registry",
+        "MongoDB",
+        "MongoDB Charts"
+      ],
+      "points": [
+        "Real-time pipeline: Kafka producer with Avro serialization into Confluent Cloud, MongoDB sink connector, Atlas storage.",
+        "Live MongoDB Charts dashboards for real-time operational insight on shipment status."
+      ],
+      "links": [
+        {
+          "label": "Source",
+          "url": "https://github.com/aspiringgarv/FedEx-Logistics-Stream-Data-Analysis"
+        }
+      ]
+    },
+    {
+      "title": "Submission Exporter for LeetCode",
+      "subtitle": "Browser extension",
+      "stack": [
+        "JavaScript",
+        "Manifest V3",
+        "Chrome",
+        "Firefox"
+      ],
+      "points": [
+        "One-click export of your own LeetCode submissions as a ZIP: all, accepted only, or latest accepted per problem.",
+        "Runs entirely in the browser and collects no data; published on Firefox Add-ons."
+      ],
+      "links": [
+        {
+          "label": "Source",
+          "url": "https://github.com/aspiringgarv/leetcode-exporter"
+        },
+        {
+          "label": "Project page",
+          "url": "https://aspiringgarv.github.io/leetcode-exporter/"
+        }
+      ]
+    },
+    {
+      "title": "SnapGram",
+      "subtitle": "Flutter photo sharing and chat",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "Firebase"
+      ],
+      "points": [
+        "Photo-sharing app where you capture and share moments with followers, plus chat with friends."
+      ],
+      "links": [
+        {
+          "label": "Source",
+          "url": "https://github.com/aspiringgarv/SnapGram"
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "Languages": [
+      "Java",
+      "C++",
+      "C",
+      "SQL"
+    ],
+    "Frameworks": [
+      "Spring Boot",
+      "Spring Security",
+      "JPA/Hibernate",
+      "Flutter"
+    ],
+    "Data and tools": [
+      "Apache Kafka",
+      "PostgreSQL",
+      "MySQL",
+      "Redis",
+      "Hadoop",
+      "Hive",
+      "GCP Dataproc",
+      "Git",
+      "Linux"
+    ],
+    "Concepts": [
+      "System design",
+      "API design",
+      "REST",
+      "OOP and OOD",
+      "Distributed systems"
+    ]
+  },
+  "achievements": [
+    "ICPC Prelims: rank 350 among 3000 teams",
+    "Global rank 393 in LeetCode Weekly 454",
+    "Global rank 528 in LeetCode Weekly 456",
+    "Global rank 1445 in Codeforces Round 1019 (Div. 2)"
+  ],
+  "leadership": [
+    {
+      "title": "DSA Mentor",
+      "org": "CipherSchools, Lovely Professional University",
+      "period": "Jun 2025 - Aug 2025",
+      "text": "Mentored 150+ students in DSA and CP, improving placement test scores by 35%."
+    },
+    {
+      "title": "Teaching Assistant",
+      "org": "IIIT Vadodara",
+      "period": "Oct 2024 - Mar 2025",
+      "text": "Ran data structures tutorials, debugged student code and evaluated lab assignments."
+    },
+    {
+      "title": "Flutter Volunteer",
+      "org": "Google Developer Student Clubs",
+      "period": "2023 - 2024",
+      "text": "Helped run Flutter workshops on widgets and state management."
+    }
+  ],
+  "education": [
+    {
+      "school": "IIIT Vadodara",
+      "degree": "B.Tech, Computer Science",
+      "period": "2022 - 2026",
+      "grade": "CGPA 8.88 / 10"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "github",
+      "name": "GitHub",
+      "handle": "@aspiringgarv",
+      "url": "https://github.com/aspiringgarv",
+      "note": "open source and projects"
+    },
+    {
+      "id": "leetcode",
+      "name": "LeetCode",
+      "handle": "@aspiringgarv",
+      "url": "https://leetcode.com/u/aspiringgarv",
+      "note": "max 2115, top 1.58%"
+    },
+    {
+      "id": "codeforces",
+      "name": "Codeforces",
+      "handle": "@aspgarv112",
+      "url": "https://codeforces.com/profile/aspgarv112",
+      "note": "Specialist, max 1411"
+    },
+    {
+      "id": "atcoder",
+      "name": "AtCoder",
+      "handle": "@aspgarv",
+      "url": "https://atcoder.jp/users/aspgarv",
+      "note": "contest profile"
+    },
+    {
+      "id": "linkedin",
+      "name": "LinkedIn",
+      "handle": "garv-arora",
+      "url": "https://linkedin.com/in/garv-arora",
+      "note": "let's connect"
+    }
+  ]
+}

@@ -34,9 +34,9 @@ For each featured project: `gh api repos/<owner>/<repo>/readme -H "Accept: appli
    - `profiles[].id` must be one of `github, leetcode, codeforces, atcoder, linkedin` (icons in `frontend/src/components/Icons.tsx`).
    - `roles` rotate in the hero and `tagline` sits under the name: both must say precisely what the person does (technology plus purpose), never slogans like "builder" or "ninja".
    - `stats` are four headline numbers taken from the resume (ratings, ranks, CGPA). Skip any you cannot source.
-3. Replace the original author's text everywhere (find it with `grep -rn "Garv\|LumberFi\|GoPay\|aspiringgarv" frontend/src frontend/index.html backend/src README.md`):
+3. Replace the original author's text everywhere (find it with `grep -rn "Garv\|GoPay\|aspiringgarv" frontend/src frontend/index.html backend/src README.md`):
    - `frontend/index.html` title and description; `components/Layout.tsx` footer name; `ProfileController.java` download filename; `ApiTest.java` name assertion; `README.md` title.
-   - `components/lab/PipelineLab.tsx`, `PaymentLab.tsx`, `PaymentLab.java`, `terminal/commands.ts` describe the author's own work (LumberFi pipelines, GoPay). Rewrite the intro paragraphs to match the user's experience, or remove those demos from `components/lab/Lab.tsx` if they have nothing similar. Never leave someone else's claims on their site.
+   - `components/lab/PipelineLab.tsx`, `PaymentLab.tsx`, `PaymentLab.java`, `terminal/commands.ts` describe the author's own work (ERP sync pipelines, GoPay). Rewrite the intro paragraphs to match the user's experience, or remove those demos from `components/lab/Lab.tsx` if they have nothing similar. Never leave someone else's claims on their site.
    - `components/OwnerAvatar.tsx`: hair, skin and hoodie colors so the hero avatar resembles them (ask for hair and skin tone only if they care).
 4. Leave the algorithms page, cube solver, tricks and visitor avatars as they are; they are generic.
 

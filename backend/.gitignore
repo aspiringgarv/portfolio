@@ -1,2 +1,3 @@
 target/
-data/
+# H2 database folder only (not src/main/resources/data)
+/data/
